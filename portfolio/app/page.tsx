@@ -2,11 +2,11 @@ import { HandSvg } from "./Images/Hand";
 
 export default function Home() {
   return (
-    <div className=" flex-col flex items-center">
-      <div className="flex justify-between w-4/5 p-5">
+    <div className=" flex-col flex items-center relative h-full w-full">
+      <div className="flex justify-between w-full px-36 p-7 sticky top-0 bg-white  ">
         <div>Alexander</div>
         <div>
-          <ul className="flex gap-4">
+          <ul className="flex gap-4 text-md">
             <li>Home</li>
             <li>About</li>
             <li>Skills</li>
@@ -33,12 +33,33 @@ export default function Home() {
             applications.
           </p>
         </div>
-        <div className="w-2/5"></div>
+        <div className="w-2/5">
+          <img
+            className="rounded-full object-cover h-72 w-72"
+            src="\Alex.jpg"
+          ></img>
+        </div>
       </div>
-      <div>
+      <div className="flex justify-center flex-col items-center space-y-10">
         <div>
-          <p>About Me</p>
-          <p>My Introduction</p>
+          <p className="text-3xl font-bold text-center">About Me</p>
+          <p className="text-md text-gray-500 text-center">My Introduction</p>
+        </div>
+        <div className="flex w-4/5 justify-center space-x-5">
+          <div className="w-1/2 p-10">
+            <img className=" rounded-2xl" src="\Alex.jpg"></img>
+          </div>
+          <div className="w-1/2">
+            <div></div>
+            <p>
+              Looking for a MERN Stack Developer to bring your web or mobile
+              application ideas to life? Look no further! With expertise in
+              MongoDb, MySql, Express, React, React-Native, Node, Typescript and
+              GraphQL, I am your go-to developer for building sustainable client
+              and server-side projects. Let's work together to create a dynamic
+              and engaging online experience for your audience!
+            </p>
+          </div>
         </div>
       </div>
     </div>
