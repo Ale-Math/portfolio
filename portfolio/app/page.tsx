@@ -1,3 +1,7 @@
+import { Call } from "./Components/Icons/call";
+import { Case } from "./Components/Icons/case";
+import { Trophy } from "./Components/Icons/trophy";
+import { Tile } from "./Components/tile";
 import { HandSvg } from "./Images/Hand";
 
 export default function Home() {
@@ -41,8 +45,8 @@ export default function Home() {
         </div>
       </div>
       <div className="flex justify-center flex-col items-center space-y-10">
-        <div>
-          <p className="text-3xl font-bold text-center">About Me</p>
+        <div className="py-10 space-y-2">
+          <p className="text-4xl font-bold text-center">About Me</p>
           <p className="text-md text-gray-500 text-center">My Introduction</p>
         </div>
         <div className="flex w-4/5 justify-center space-x-5">
@@ -50,8 +54,20 @@ export default function Home() {
             <img className=" rounded-2xl" src="\Alex.jpg"></img>
           </div>
           <div className="w-1/2">
-            <div></div>
-            <p>
+            <div className="flex gap-5 py-10">
+              <Tile
+                icon={<Trophy />}
+                title="Experience"
+                description="3+ years working"
+              />
+              <Tile
+                icon={<Case />}
+                title="Completed"
+                description="25+ projects"
+              />
+              <Tile icon={<Call />} title="Support" description="Online 24/7" />
+            </div>
+            <p className="w-4/5 text-gray-600 text-lg">
               Looking for a MERN Stack Developer to bring your web or mobile
               application ideas to life? Look no further! With expertise in
               MongoDb, MySql, Express, React, React-Native, Node, Typescript and
@@ -60,6 +76,14 @@ export default function Home() {
               and engaging online experience for your audience!
             </p>
           </div>
+        </div>
+      </div>
+      <div>
+        <div className="py-10 space-y-2">
+          <p className="text-4xl font-bold text-center">Skills</p>
+          <p className="text-sm text-gray-500 text-center">
+            My Technical Skills
+          </p>
         </div>
       </div>
     </div>
