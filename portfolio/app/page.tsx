@@ -1,3 +1,4 @@
+import { Button } from "./Components/Button";
 import { Call } from "./Components/Icons/call";
 import { Case } from "./Components/Icons/case";
 import { Trophy } from "./Components/Icons/trophy";
@@ -36,6 +37,7 @@ export default function Home() {
             new skills and expertise to create stunning and fully responsive
             applications.
           </p>
+          <Button text="Say Hello" />
         </div>
         <div className="w-2/5">
           <img
