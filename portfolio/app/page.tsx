@@ -1,6 +1,8 @@
 import { Button } from "./Components/Button";
 import { Call } from "./Components/Icons/call";
 import { Case } from "./Components/Icons/case";
+import { Document } from "./Components/Icons/document";
+import { Hello } from "./Components/Icons/hello";
 import { Trophy } from "./Components/Icons/trophy";
 import { Tile } from "./Components/tile";
 import { HandSvg } from "./Images/Hand";
@@ -32,12 +34,12 @@ export default function Home() {
           <p className="text-xl text-gray-600">
             ———— &nbsp; Software Developer
           </p>
-          <p className="w-4/5 text-lg/6 text-gray-500">
+          <p className="w-4/5 text-lg/6 text-gray-500 pb-10">
             As a Software Engineer, I am driven by a deep passion for acquiring
             new skills and expertise to create stunning and fully responsive
             applications.
           </p>
-          <Button text="Say Hello" />
+          <Button text="Say Hello &nbsp;" postIcon={<Hello />} />
         </div>
         <div className="w-2/5">
           <img
@@ -53,7 +55,7 @@ export default function Home() {
         </div>
         <div className="flex w-4/5 justify-center space-x-5">
           <div className="w-1/2 p-10">
-            <img className=" rounded-2xl" src="\Alex.jpg"></img>
+            <img className=" rounded-2xl h-11/12" src="\Alex.jpg"></img>
           </div>
           <div className="w-1/2">
             <div className="flex gap-5 py-10">
@@ -69,7 +71,7 @@ export default function Home() {
               />
               <Tile icon={<Call />} title="Support" description="Online 24/7" />
             </div>
-            <p className="w-4/5 text-gray-600 text-lg">
+            <p className="w-4/5 text-gray-600 text-lg pb-12">
               Looking for a MERN Stack Developer to bring your web or mobile
               application ideas to life? Look no further! With expertise in
               MongoDb, MySql, Express, React, React-Native, Node, Typescript and
@@ -77,6 +79,7 @@ export default function Home() {
               and server-side projects. Let's work together to create a dynamic
               and engaging online experience for your audience!
             </p>
+            <Button text="Download CV &nbsp;" postIcon={<Document />} />
           </div>
         </div>
       </div>
