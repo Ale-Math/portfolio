@@ -3,52 +3,16 @@ import { Button } from "./Components/Button";
 import { Call } from "./Components/Icons/call";
 import { Case } from "./Components/Icons/case";
 import { Document } from "./Components/Icons/document";
-import { Hello } from "./Components/Icons/hello";
 import { Trophy } from "./Components/Icons/trophy";
+import { Header } from "./Components/PageComponents/Header";
+import { HomeSection } from "./Components/PageComponents/Home";
 import { Tile } from "./Components/tile";
-import { HandSvg } from "./Images/Hand";
 
 export default function Home() {
   return (
     <div className=" flex-col flex items-center relative h-full w-full">
-      <div className="flex justify-between w-full px-36 p-7 sticky top-0 bg-white  ">
-        <div>Alexander</div>
-        <div>
-          <ul className="flex gap-4 text-md">
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-      </div>
-      <div className="py-24 w-11/12 flex justify-center">
-        <div className="w-1/5"></div>
-        <div className="w-2/5 space-y-4">
-          <p className="text-6xl font-bold">Alexander P.</p>
-          <div className="flex items-center">
-            <p className="text-6xl font-bold">Mathew</p> &nbsp;&nbsp;{" "}
-            <HandSvg />
-          </div>
-          <p className="text-xl text-gray-600">
-            ———— &nbsp; Software Developer
-          </p>
-          <p className="w-4/5 text-lg/6 text-gray-500 pb-10">
-            As a Software Engineer, I am driven by a deep passion for acquiring
-            new skills and expertise to create stunning and fully responsive
-            applications.
-          </p>
-          <Button text="Say Hello &nbsp;" postIcon={<Hello />} />
-        </div>
-        <div className="w-2/5">
-          <img
-            className="rounded-full object-cover h-72 w-72"
-            src="\Alex.jpg"
-          ></img>
-        </div>
-      </div>
+      <Header />
+      <HomeSection />
       <div className="flex justify-center flex-col items-center space-y-10">
         <div
           className="py-1
@@ -94,7 +58,7 @@ export default function Home() {
             My Technical Skills
           </p>
         </div>
-        <div className="flex">
+        <div className="flex gap-10">
           <BigTile
             title="Frontend Engineer"
             skill={[
@@ -116,22 +80,22 @@ export default function Home() {
               "MongoDB",
               "Git/GitHub",
               "PostgreSQL",
-              "Docker",
-              "CI/CD",
-              "AWS",
+              "Web Sockets",
+              "Zod",
+              "Bycrypt",
             ]}
           />
           <BigTile
-            title="Backend Engineer"
+            title="DevOps Engineer"
             skill={[
-              "Node Js",
-              "Express",
-              "MongoDB",
-              "Git/GitHub",
-              "PostgreSQL",
               "Docker",
               "CI/CD",
               "AWS",
+              "Kubernetes",
+              "Grafana",
+              "Nginx",
+              "Prometheus",
+              "Helm",
             ]}
           />
         </div>

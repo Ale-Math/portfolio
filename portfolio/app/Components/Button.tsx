@@ -8,7 +8,7 @@ interface ButtonProps {
 
 export function Button(props: ButtonProps) {
   return (
-    <button className="flex justify-center bg-black py-4 px-6 rounded-2xl text-lg  text-white cursor-pointer">
+    <button className="flex justify-center bg-black py-4 px-6 rounded-2xl text-lg font-bold  text-white cursor-pointer">
       {props.preIcon}
       {props.text}
       {props.postIcon}

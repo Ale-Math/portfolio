@@ -7,12 +7,14 @@ interface BigTileProps {
 
 export function BigTile(props: BigTileProps) {
   return (
-    <div className="border bg-slate-50 rounded-2xl p-5">
+    <div className="border border-gray-300 bg-slate-50 rounded-xl p-10">
       <div>
-        <p className="text-lg p-3">{props.title}</p>
-        <div className="grid grid-cols-2 gap-4">
+        <p className="text-lg font-bold  flex justify-center pb-10">
+          {props.title}
+        </p>
+        <div className="grid grid-cols-2 gap-5">
           {props.skill.map((skill, index) => (
-            <div key={index} className="flex items-center">
+            <div key={index} className="flex items-center text-md">
               <Tick />
               &nbsp;{skill}
             </div>
