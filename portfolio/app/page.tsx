@@ -49,7 +49,10 @@ export default function Home() {
         </div>
       </div>
       <div className="flex justify-center flex-col items-center space-y-10">
-        <div className="py-10 space-y-2">
+        <div
+          className="py-1
+        0 space-y-2"
+        >
           <p className="text-4xl font-bold text-center">About Me</p>
           <p className="text-md text-gray-500 text-center">My Introduction</p>
         </div>
@@ -84,7 +87,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <div className="py-10 space-y-2">
+        <div className="py-20 space-y-2">
           <p className="text-4xl font-bold text-center">Skills</p>
           <p className="text-sm text-gray-500 text-center">
             My Technical Skills
