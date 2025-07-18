@@ -1,3 +1,4 @@
+import { BigTile } from "./Components/BigTile";
 import { Button } from "./Components/Button";
 import { Call } from "./Components/Icons/call";
 import { Case } from "./Components/Icons/case";
@@ -92,6 +93,47 @@ export default function Home() {
           <p className="text-sm text-gray-500 text-center">
             My Technical Skills
           </p>
+        </div>
+        <div className="flex">
+          <BigTile
+            title="Frontend Engineer"
+            skill={[
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "Typescript",
+              "React Js",
+              "Recoil",
+              "Next Js",
+              "Tailwind",
+            ]}
+          />
+          <BigTile
+            title="Backend Engineer"
+            skill={[
+              "Node Js",
+              "Express",
+              "MongoDB",
+              "Git/GitHub",
+              "PostgreSQL",
+              "Docker",
+              "CI/CD",
+              "AWS",
+            ]}
+          />
+          <BigTile
+            title="Backend Engineer"
+            skill={[
+              "Node Js",
+              "Express",
+              "MongoDB",
+              "Git/GitHub",
+              "PostgreSQL",
+              "Docker",
+              "CI/CD",
+              "AWS",
+            ]}
+          />
         </div>
       </div>
     </div>
