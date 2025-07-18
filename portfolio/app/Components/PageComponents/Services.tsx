@@ -8,7 +8,11 @@ export function Services() {
         <p className="text-4xl font-bold text-center">Services</p>
         <p className="text-sm text-gray-500 text-center">What i offer</p>
       </div>
-      <ServicesTile icon={<Document />} title="Full Stack Developer" />
+      <div className="flex gap-5 py-20">
+        <ServicesTile icon={<Document />} title="Full Stack Developer" />
+        <ServicesTile icon={<Document />} title="Full Stack Developer" />
+        <ServicesTile icon={<Document />} title="Full Stack Developer" />
+      </div>
     </div>
   );
 }
