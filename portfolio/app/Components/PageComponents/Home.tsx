@@ -4,7 +4,7 @@ import { Hello } from "../Icons/hello";
 
 export function HomeSection() {
   return (
-    <div className="py-24 w-11/12 flex justify-center">
+    <div className="w-11/12 flex justify-center">
       <div className="w-1/5"></div>
       <div className="w-2/5 space-y-4">
         <p className="text-6xl font-bold">Alexander P.</p>
