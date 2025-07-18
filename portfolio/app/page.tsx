@@ -1,6 +1,7 @@
 import { About } from "./Components/PageComponents/About";
 import { Header } from "./Components/PageComponents/Header";
 import { HomeSection } from "./Components/PageComponents/Home";
+import { Services } from "./Components/PageComponents/Services";
 import { Skills } from "./Components/PageComponents/Skills";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <HomeSection />
       <About />
       <Skills />
+      <Services />
     </div>
   );
 }
