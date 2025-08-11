@@ -10,7 +10,7 @@ export function Services() {
       </div>
       <div className="flex gap-5 py-20">
         <ServicesTile icon={<Document />} title="Full Stack Developer" />
-        <ServicesTile icon={<Document />} title="Full Stack Developer" />
+        <ServicesTile icon={<Document />} title="Back-End Developer" />
         <ServicesTile icon={<Document />} title="Full Stack Developer" />
       </div>
     </div>
