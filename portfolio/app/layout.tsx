@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alexander Mathew",
+  title: "Alexander's Portfolio",
   description: "Alexander Mathew's Portfolio.",
   icons: "/favicon.ico",
 };
