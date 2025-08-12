@@ -9,9 +9,21 @@ export function Services() {
         <p className="text-sm text-gray-500 text-center">What i offer</p>
       </div>
       <div className="flex gap-5 py-20">
-        <ServicesTile icon={<Document />} title="Full Stack Developer" />
-        <ServicesTile icon={<Document />} title="Back-End Developer" />
-        <ServicesTile icon={<Document />} title="Front-End Developer" />
+        <ServicesTile
+          icon={<Document />}
+          icon2={<Document />}
+          title="Full Stack Developer"
+        />
+        <ServicesTile
+          icon={<Document />}
+          icon2={<Document />}
+          title="Back-End Developer"
+        />
+        <ServicesTile
+          icon={<Document />}
+          icon2={<Document />}
+          title="Front-End Developer"
+        />
       </div>
     </div>
   );
